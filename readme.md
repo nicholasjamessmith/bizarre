@@ -42,4 +42,3 @@ The site will be built designed with RESTful routes architecture using JavaScrip
 
 ##ERD (Entity Relationship Diagram)
 <img src="./images/bizarre_erd.png" alt="Entity Relationship Diagram">
-- [Free ERD Diagram Tool](https://dbdiagram.io/home)
