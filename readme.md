@@ -37,4 +37,4 @@ The site will be built designed with RESTful routes architecture using JavaScrip
 *optional (depending on if built with authentication, and if model feed idea is realistic)
 
 ##ERD (Entity Relationship Diagram)
-<img src="./images/project2.png" alt="Entity Relationship Diagram">
+<img src="./images/journalerd.png" alt="Entity Relationship Diagram">
