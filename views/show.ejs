@@ -15,8 +15,11 @@
           <p>
             <%= entry.body%>
           </p>
+          <form action="/entries/<%=entry._id %>?_method=DELETE" method="POST">
+            <input type="submit" value="delete" />
+          </form>
+          <a href="/entries" <button>Back to Entries</button>
         </article>
-
       </div>
     </main>
   </body>
