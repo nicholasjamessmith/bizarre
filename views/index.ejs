@@ -7,7 +7,8 @@
     <ul>
       <% entries.forEach(entry=> { %>
         <li>
-          <a href="/entries/<%= entry._id %>" <%=entry.title %>
+          <a href="/entries/<%= entry._id %>">
+            <%=entry.title %>
           </a>
         </li>
         <% }) %>

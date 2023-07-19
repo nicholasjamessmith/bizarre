@@ -10,6 +10,7 @@ const app = express();
 
 //Middleware
 app.use(morgan("tiny")); //logging
+app.use(express.urlencoded({ extended: false }))
 app.use(methodOverride("_method")); //override with POST having ?_method=DELETE or ?_method=PUT
 app.use(express.static("public")) // serve static files from public folder
 

@@ -5,6 +5,7 @@ const Entry = require("../models/entries");
 const router = express.Router()
 
 //Controllers
+//Index
 router.get("/", async (req, res) => {
   const allEntries = await Entry.find({});
   res.render("index.ejs", { entries: allEntries })
@@ -16,10 +17,17 @@ router.get("/new", (req, res) => {
 })
 
 //Create
-router.post("/entries", (req, res) => {
-  //fit data into odel before 'create'ing
-  Entry.create(req.body)
+router.post("/", async (req, res) => {
+  //fit data into model before 'create'ing
+  await Entry.create(req.body)
   res.redirect("/entries")
+})
+
+//Show
+router.get("/:id", async (req, res) => {
+  const id = req.params.id;
+  const entry = await Entry.findById(id)
+  res.render("entries/show.ejs", { entry: entry })
 })
 
 module.exports = router;
