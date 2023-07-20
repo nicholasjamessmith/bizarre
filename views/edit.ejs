@@ -3,12 +3,18 @@
 <%- include("./partials/head.ejs") %>
 
   <body>
-    <form method="POST" action="/entries/<%=entry._id%>?_method=PUT">
-      Title: <input type="text" name="title" value="<%=entry.title %>" />
-      </br>
-      <input type="Submit" value="Update Journal" />
-    </form>
-    <a href="/entries">Back the the list of entries</a>
+    <h1>Edit entry</h1>
+    <div class="journal">
+      <form method="POST" action="/entries/<%=entry._id%>?_method=PUT">
+        Title: <input type="text" name="title" value="<%=entry.title %>" />
+        </br>
+        Author: <input type="text" name="author" value="<% entry.author %>" />
+        Entry: <input type="text" name="body" style="width:400px; height: 400px" value="<%= entry.body %>" />
+        </br>
+        <input type="Submit" value="Update Journal" />
+      </form>
+      <a href="/entries">Back the the list of entries</a>
+    </div>
   </body>
 
 </html>

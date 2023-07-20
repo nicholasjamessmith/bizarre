@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Roboto:ital,wght@0,300;1,300&display=swap');
+
+body {
+  background-color: lightyellow;
+  text-align: center;
+  font-family: "Assistant", sans-serif;
+}
+
+h1{
+font-style: italic;
+}
+ul {
+  list-style-type: none;
+}
+
+.journal {
+  border: 2px solid midnightblue;
+  width: 50%;
+  margin: auto;
+}

@@ -24,17 +24,14 @@ The site will be built designed with RESTful routes architecture using JavaScrip
 
 | Endpoint          | Method | Purpose                                                          |
 | ----------------- | ------ | ---------------------------------------------------------------- |
-| /entries          | GET    | list all pieces                                                  |
+| /entries          | GET    | list all e ntries                                                |
 | /entries/new      | GET    | display 'new' page (form)                                        |
-| /entries          | POST   | create new piece                                                 |
-| /entries/:id      | GET    | display individual show page of a piece                          |
-| /entries/:id      | DELETE | delete current piece                                             |
+| /entries          | POST   | create new entry                                                 |
+| /entries/:id      | GET    | display individual show page of an entry                         |
+| /entries/:id      | DELETE | delete current entry                                             |
 | /entries/:id/edit | GET    | display edit page (form)                                         |
-| /entries/:id      | PUT    | edit/update individual piece and redirects to list of all pieces |
-| */myentries       | GET    | display list of all user's pieces                                |
-| */entries/:id     | POST   | adds piece to /mypieces page                                     |
+| /entries/:id      | PUT    | edit/update individual entry and redirects to list of all pieces |
 
-*optional (depending on if built with authentication, and if model feed idea is realistic)
 
 ##ERD (Entity Relationship Diagram)
 <img src="./images/journalerd.png" alt="Entity Relationship Diagram">

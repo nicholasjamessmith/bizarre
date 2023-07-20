@@ -3,7 +3,8 @@
 <%- include("./partials/head.ejs") %>
 
   <body>
-    <h1>Simple Journal</h1>
+    <h1>Simple Journal...</h1>
+    <div class="journal">
     <ul>
       <% entries.forEach(entry=> { %>
         <li>
@@ -14,6 +15,7 @@
         <% }) %>
     </ul>
     <a href="/entries/new">New entry</a>
+    </div>
   </body>
 
 </html>
