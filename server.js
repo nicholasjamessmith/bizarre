@@ -18,7 +18,7 @@ app.use("/entries", EntriesRouter)
 
 //Routes
 app.get("/", (req, res) => {
-  res.send("Simple Journal")
+  res.redirect("/entries")
 })
 
 //Listen
