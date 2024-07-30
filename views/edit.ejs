@@ -3,15 +3,17 @@
 <%- include("./partials/head.ejs") %>
 
   <body>
-    <h1>Edit entry</h1>
+    <a href="/entries"><h1>Simple Journal</h1></a>
+    <h2>Edit entry</h2>
     <div class="journal">
       <form method="POST" action="/entries/<%=entry._id%>?_method=PUT">
         Title: <input type="text" name="title" value="<%=entry.title %>" />
         </br>
         Author: <input type="text" name="author" value="<% entry.author %>" />
-        Entry: <input type="text" name="body" style="width:400px; height: 400px" value="<%= entry.body %>" />
+        Entry: <textarea type="text" name="body" style="width:400px; height: 400px"
+          value="<%= entry.body %>">"<%= entry.body %>"</textarea>
         </br>
-        <input type="Submit" value="Update Journal" />
+        <input type="Submit" value="Update Journal" class="button" id="update"/>
       </form>
       <a href="/entries">Back the the list of entries</a>
     </div>

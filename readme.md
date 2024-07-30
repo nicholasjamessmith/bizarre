@@ -1,5 +1,5 @@
 # PROJECT 2
-
+-for development, npm run dev (may need to install certain packages)
 - **Project Name:** Simple Journal
 - **Project By:** Nicholas Smith
 - [**LINK TO GITHUB:**](https://github.com/nicholasjamessmith/bizarre)
@@ -8,7 +8,7 @@
 - [**LINK TO TRELLO**](https://trello.com/b/mhPIIh41/project2)
 
 ## Description
-Simple Journal is a journaling platform with the ability to create, read, update, and delete journal entries. Users should be able to view a list of exisiting entries on the site (either just text or multimedia), and interact with this data by adding text to it, viewing individual entries, deleting entries, and editing/updating entries. If there is time, the app may be built with authentication, allowing users to store data in separate accounts.
+Simple Journal is a journaling platform with the ability to create, read, update, and delete journal entries. Users should be able to view a list of exisiting entries on the site (either just text or multimedia), and interact with this data by adding text to it, viewing individual entries, deleting entries, and editing/updating entries.
 
 Data will be stored, retrieved from, added to, and deleted from the Mongo Database site connected via Mongoose ODM library.
 

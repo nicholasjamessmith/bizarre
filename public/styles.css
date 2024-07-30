@@ -1,20 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant&family=Roboto:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
-  background-color: lightyellow;
+  background-color: whitesmoke;
   text-align: center;
-  font-family: "Assistant", sans-serif;
+  /*font-family: "Assistant", sans-serif;*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-h1{
-font-style: italic;
+h1,
+h2 {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 ul {
   list-style-type: none;
+  font-size: large;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.listItems {
+  text-decoration: none;
 }
 
 .journal {
-  border: 2px solid midnightblue;
-  width: 50%;
+  max-width: 500px;
+  /*width: 50%;*/
   margin: auto;
+}
+
+.button {
+  /*background-color: ;*/
+  border: none;
+  color: white;
+  padding: 6px 14px;
+  margin: 2px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#new,
+#edit,
+#update {
+  background-color: #4CAF50;
+  /* Green */
+}
+
+/*#edit {
+  background-color: green;
+}*/
+#delete {
+  background-color: maroon;
+}
+
+#back {
+  background-color: darkolivegreen;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black
+}
+
+/* mouse over link */
+a:hover {
+  color: #0b28e4;
+}
+
+/* selected link */
+a:active {
+  color: navy
 }

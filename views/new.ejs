@@ -3,18 +3,25 @@
 <%- include("./partials/head.ejs") %>
 
   <body>
-    <h1>Write a New Entry</h1>
-    <form method="POST" action="/entries">
-      Title: <input type="text" name="title" />
-      </br>
-      Author: <input type="text" name="author" />
-      </br>
-      Entry: <input type="text" name="body" style="width:400px; height: 400px" ; />
-      </br>
-      <input type="submit" name="" value="Submit Entry" />
-    </form>
-    <a href="/entries">Back to list of journal entries</a>
+    <a href="/entries">
+      <h1>Simple Journal</h1>
+    </a>
+    <h2>Write a New Entry</h2>
+    <div id="form" class="form">
+      <form method="POST" action="/entries">
+        Title: <input type="text" name="title" style="width: 10%;" />
+        </br>
+        Author: <input type="text" name="author" style="width: 10%;" />
+        </br>
+        Entry: <textarea type="text" name="body" style="" ;></textarea>
+        </br>
+        <input type="submit" name="" value="Submit Entry" class="button" id="new" />
+      </form>
+    </div>
+    <a href="/entries"><button class="button" id="back">Back to Entries</button>
 
   </body>
 
 </html>
+
+<!--<input type="submit" name="" value="Submit Entry" class="button" id="new"/>-->

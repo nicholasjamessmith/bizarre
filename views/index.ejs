@@ -3,18 +3,21 @@
 <%- include("./partials/head.ejs") %>
 
   <body>
-    <h1>Simple Journal...</h1>
+    <a href="/entries">
+      <h1>Simple Journal</h1>
+    </a>
     <div class="journal">
-    <ul>
-      <% entries.forEach(entry=> { %>
-        <li>
-          <a href="/entries/<%= entry._id %>">
-            <%=entry.title %>
-          </a>
-        </li>
-        <% }) %>
-    </ul>
-    <a href="/entries/new">New entry</a>
+      <h2>Notes</h2>
+      <ul>
+        <% entries.forEach(entry=> { %>
+          <li>
+            <a class="listItems" href="/entries/<%= entry._id %>">
+              <%=entry.title %>
+            </a>
+          </li>
+          <% }) %>
+      </ul>
+      <a href="/entries/new"><button class="button" id="new">Write Something</button></a>
     </div>
   </body>
 
